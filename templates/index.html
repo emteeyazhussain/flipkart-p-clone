@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Search Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <div style="background-color: #333; color: #fff; padding: 10px; text-align: center;">flipkart Product Information</div>
+	<div style="border: 1px solid #333;text-align:center; padding: 12px;">search all info just in 1 step</div>
+ 
+ 
+    <div class="form">
+        <form action="/review" method="POST">
+            <input type="text" name="content" id="content">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+</div>
+<footer style="background-color: #333; color: #fff; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%;">
+    <p style="font-size: 20px;"><h1>Imtiyaz Hussain</h1></p>
+  </footer>
+{% endblock %}
+  
